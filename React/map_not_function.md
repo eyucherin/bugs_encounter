@@ -65,8 +65,8 @@ export default function SearchVideo() {
 
 ## Solution2
  - data?.items는 분명 리스트 형태인데....
- - `let { keyword } = useParams();` 여기에 문제가 있었다. 
- - `useParams()` --> `useParams([])`.
+ - `let [search, setSearch] = useState("");` 여기에 문제가 있었다. 
+ - `useState("")` --> `useState([])`.
  - 처음 랜더 될때 리스트를 넘기지 않아서, 애러가 생김..
 
 
